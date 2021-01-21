@@ -16,8 +16,8 @@ body {
   @apply transition duration-700 ease-in;
 }
 
-.tw-test {
-  @apply text-xs text-red-300;
+.tw-container {
+  @apply container px-12 mt-16 lg:mt-32;
 }
 
 /* Start purging... */
