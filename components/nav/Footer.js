@@ -2,14 +2,15 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <div className="flex py-6 justify-center text-sm text-gray-300 font-bold">
+    <div className="static lg:fixed bottom-0 left-0 right-0 flex justify-center mt-12 lg:mt-0 py-3 lg:py-4 2xl:py-6 text-xs lg:text-sm text-gray-300">
       <div>
+        Powered by{' '}
         <a
           href="https://ctrl-z.studio/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by Ctrl-Z Studio
+          Ctrl-Z Studio
         </a>
       </div>
       <div>

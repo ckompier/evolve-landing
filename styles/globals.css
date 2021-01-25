@@ -2,22 +2,30 @@
 /* Write your own custom base styles here */
 html,
 body {
-  @apply bg-gray-100 overflow-x-hidden;
+  @apply bg-gray-100 font-body;
 }
+
 @font-face {
-  font-family: 'BIOWEAPON';
-  src: local('BIOWEAPON'), url(/fonts/BIOWEAPON.ttf) format('ttf');
+  font-family: 'Bioweapon';
+  src: url('public/fonts/bioweapon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* Start purging... */
 @tailwind components;
 /* Stop purging. */
 .tw-animation {
-  @apply transition duration-700 ease-in;
+  @apply transition duration-700 ease-in-out;
 }
 
 .tw-container {
-  @apply container px-12 mt-16 lg:mt-32;
+  @apply px-12 lg:px-24 2xl:px-48;
+}
+
+.tw-body {
+  @apply text-base lg:text-base 2xl:text-lg leading-relaxed;
 }
 
 /* Start purging... */

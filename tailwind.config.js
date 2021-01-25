@@ -10,7 +10,7 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.trueGray,
-      acento: '#2EC4B6',
+      accent: '#2EC4B6',
     },
     boxShadow: {
       DEFAULT:
@@ -19,17 +19,32 @@ module.exports = {
         '-8px -8px 8px 0 rgba(255,255,255,0.7), 8px 8px 8px 0 rgba(174,174,192,0.2);',
     },
     extend: {
-      fontFamily: {
-        sans: ['Arial'],
-        logo: ['BIOWEAPON'],
+      height: {
+        'screen/2': '50vh',
+        'screen-75': '75vh',
+        'screen/3': 'calc(100vh / 3)',
+        'screen/4': 'calc(100vh / 4)',
+        'screen/5': 'calc(100vh / 5)',
       },
-      backgroundImage: (theme) => ({
-        hero: "url('/rss.jpg')",
-      }),
+
+      zIndex: {
+        '-1': '-1',
+        99: 99,
+        100: 100,
+        999: 999,
+        1000: 1000,
+      },
+
+      fontFamily: {
+        body: ['Arial', 'sans-serif'],
+        header: ['Bioweapon', 'sans-serif'],
+      },
     },
+
     variants: {
       extend: {},
     },
+
     plugins: [],
   },
 };

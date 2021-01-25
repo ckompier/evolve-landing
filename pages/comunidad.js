@@ -1,11 +1,12 @@
 import Head from 'next/head';
+
 import { WEB_NAME } from 'utils/constants';
 
 import PageHero from 'components/shared/PageHero';
 import PageWrapper from 'components/shared/PageWrapper';
-import CatalogueBody from 'components/catalogue/CatalogueBody';
+import CommunityBody from 'components/community/CommunityBody';
 
-export default function PageCatalogo() {
+export default function PageComunidad() {
   return (
     <>
       <Head>
@@ -13,8 +14,9 @@ export default function PageCatalogo() {
       </Head>
 
       <PageWrapper>
-        <PageHero heroTitle="explora." heroImage="catalogue-hero.png" />
-        <CatalogueBody />
+        <PageHero heroTitle="únete." heroImage="community-hero.png" />
+
+        <CommunityBody />
       </PageWrapper>
     </>
   );
